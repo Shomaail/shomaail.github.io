@@ -1,0 +1,314 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Admin View</title>
+    <link rel="icon" href=" /static/images/favicon.ico">
+
+    <!-- Bootstrap Core CSS -->
+    <!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"-->
+    <!--          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">-->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link href="static/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="static/css/font-awesome.min.css " rel="stylesheet" type="text/css">
+    <!-- Custom CSS -->
+    <link href="static/css/custom.css" rel="stylesheet" type="text/css">
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="static/js/bootstrap.min.js"></script>
+    <script src="static/js/jquery.min.js"></script>
+    <!-- Rest of the scripts -->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/js/bootstrap-select.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/css/bootstrap-select.min.css">
+    <style>
+        /* The container */
+        .container {
+            display: block;
+            position: relative;
+            padding-left: 35px;
+            margin-bottom: 12px;
+            cursor: pointer;
+            font-size: 22px;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        /* Hide the browser's default radio button */
+        .container input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+        }
+
+        /* Create a custom radio button */
+        .checkmark {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 25px;
+            width: 25px;
+            background-color: #eee;
+            border-radius: 50%;
+        }
+
+        /* On mouse-over, add a grey background color */
+        .container:hover input ~ .checkmark {
+            background-color: #ccc;
+        }
+
+        /* When the radio button is checked, add a blue background */
+        .container input:checked ~ .checkmark {
+            background-color: #2196F3;
+        }
+
+        /* Create the indicator (the dot/circle - hidden when not checked) */
+        .checkmark:after {
+            content: "";
+            position: absolute;
+            display: none;
+        }
+
+        /* Show the indicator (dot/circle) when checked */
+        .container input:checked ~ .checkmark:after {
+            display: block;
+        }
+
+        /* Style the indicator (dot/circle) */
+        .container .checkmark:after {
+            top: 9px;
+            left: 9px;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: white;
+        }
+
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+            width: 100%;
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            text-align: left;
+            padding: 16px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        ul {
+            list-style-type: none; /* Remove bullets */
+            padding: 0; /* Remove padding */
+            margin: 0; /* Remove margins */
+        }
+
+        ul li {
+            border: 1px solid #ddd; /* Add a thin border to each list item */
+            margin-top: -1px; /* Prevent double borders */
+            background-color: #f6f6f6; /* Add a grey background color */
+            padding: 12px; /* Add some padding */
+        }
+    </style>
+
+</head>
+<body cz-shortcut-listen="true">
+<div class="container-fluid" id="kfupm">
+    <div class="container">
+        <div class="row-fluid">
+            <div class="span3">
+                <a target="_blank" href="http://www.kfupm.edu.sa/Default.aspx">King Fahd University of Petroleum &amp;
+                    Minerals</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<br>
+
+<div class="container">
+
+
+    <!-- Page Content -->
+    <div class="row">
+        <!-- /.column -->
+
+        <div class="col-md-12">
+            <h1>Mentor Show Willingness - Mentorship Platform </h1>
+            This is to inform you that the EI has selected you to mentor the emerging entrepreneur
+            Are you willing
+            </br>
+
+            <label class="container">Yes
+                <input type="radio" checked="checked" name="radio">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">No
+                <input type="radio" name="radio">
+                <span class="checkmark"></span>
+            </label>
+            <button type="submit" class="btn btn-primary btn-lg"><span class="glyphicon glyphicon-save-file"
+                                                                       aria-hidden="true"></span> Submit
+            </button>
+
+
+            <br>
+            <p><input type="submit" value="Submit" class="form-control"></p>
+
+
+        </div>
+        <!-- /.column -->
+    </div>
+
+
+    <div class="row navbar-fixed-bottom">
+        <hr>
+        <div class="col-lg-12" align="center">
+            <p>©2021, Mentoring Sessions Reservation, All Rights Reserved <br>
+                King Fahd University of Petroleum &amp; Minerals
+            </p>
+        </div>
+    </div>
+    <!-- /.row -->
+
+</div>
+<!-- /.container -->
+
+
+<script>
+    $(document).ready(function () {
+
+        $('#id_technician').change(function () {
+            for (var i = 1; i < 9; i++) {
+                $('#label_' + i).show();
+            }
+            var techid = $('#id_technician option:selected').val();
+            if (techid == "") {
+                alert("Please Select Technician");
+                return;
+            }
+            var reservedate = $('#date').val();
+            if (reservedate == "") {
+                return;
+            }
+
+            var data_to_send = {
+                "techid": techid,
+                "date": reservedate,
+
+                csrfmiddlewaretoken: "xJStT2htWKSQmTl4dHdRgEDPQhKKvDxw7BQDa3k5rkaoURCmD8z4LhWpwDxCkY2c"
+            };
+            $.ajax({
+                type: "POST",
+                dataType: "json",
+                url: "/get_slots",
+                data: data_to_send,
+                cache: false,
+                success: function (data) {
+                    for (var i = 0; i < data.length; i++) {
+                        $('#label_' + data[i] + ' input').attr('checked', false);
+                        $('#label_' + data[i]).removeClass('active').hide();
+                        $('#label_' + data[i] + ' .glyphicon').removeClass('glyphicon-check').addClass('glyphicon-unchecked');
+                    }
+                },
+                error: function (textStatus, errorThrown) {
+                    alert('tech change error')
+                }
+            });
+        });
+
+        $('#date').change(function () {
+            for (var i = 1; i < 9; i++) {
+                $('#label_' + i).show();
+            }
+            var techid = $('#id_technician option:selected').val();
+            if (techid == "") {
+                alert("Please Select Technician");
+                return;
+            }
+            var reservedate = $('#date').val();
+            var data_to_send = {
+                "techid": techid,
+                "date": reservedate,
+                csrfmiddlewaretoken: "xJStT2htWKSQmTl4dHdRgEDPQhKKvDxw7BQDa3k5rkaoURCmD8z4LhWpwDxCkY2c"
+            };
+            $.ajax({
+                type: "POST",
+                dataType: "json",
+                url: "/get_slots",
+                data: data_to_send,
+                cache: false,
+                success: function (data) {
+                    for (var i = 0; i < data.length; i++) {
+                        $('#label_' + data[i] + ' input').attr('checked', false);
+                        $('#label_' + data[i]).removeClass('active').hide();
+                        $('#label_' + data[i] + ' .glyphicon').removeClass('glyphicon-check').addClass('glyphicon-unchecked');
+                    }
+                },
+                error: function (textStatus, errorThrown) {
+                    alert('date change error')
+                }
+            });
+        });
+
+    });
+</script>
+
+
+<script>
+    $(function () {
+        $('body').on('click', '.btn-checkbox', function (e) {
+            e.stopPropagation();
+            e.preventDefault();
+            var $checkbox = $(this).find(':input[type=checkbox]');
+            if ($checkbox.length) {
+                var $icon = $(this).find('[data-icon-on]');
+                if ($checkbox.is(':checked')) {
+                    unchecked($checkbox);
+                } else {
+                    checked($checkbox);
+                }
+                return;
+            }
+        });
+    });
+
+
+    function checked($input) {
+        var $button = $input.closest('.btn');
+        var $icon = $button.find('[data-icon-on]');
+        $button.addClass('active');
+        $input.prop('checked', true);
+        $icon.css('width', $icon.width());
+        $icon.removeAttr('class').addClass($icon.data('icon-on'));
+        $input.trigger('change');
+    }
+
+    function unchecked($input) {
+        var $button = $input.closest('.btn');
+        var $icon = $button.find('[data-icon-on]');
+        $button.removeClass('active');
+        $input.prop('checked', false);
+        $icon.css('width', $icon.width());
+        $icon.removeAttr('class').addClass($icon.data('icon-off'));
+        $input.trigger('change');
+    }
+</script>
+
+
+</body>
+</html>

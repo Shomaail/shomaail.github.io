@@ -1,0 +1,389 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Reserve Mentoring Session</title>
+    <link rel="icon" href=" /static/images/favicon.ico">
+
+    <!-- Bootstrap Core CSS -->
+    <!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"-->
+    <!--          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">-->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link href="static/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="static/css/font-awesome.min.css " rel="stylesheet" type="text/css">
+    <!-- Custom CSS -->
+    <link href="static/css/custom.css" rel="stylesheet" type="text/css">
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="static/js/bootstrap.min.js"></script>
+    <script src="static/js/jquery.min.js"></script>
+    <!-- Rest of the scripts -->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/js/bootstrap-select.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/css/bootstrap-select.min.css">
+
+</head>
+<body cz-shortcut-listen="true">
+<div class="container-fluid" id="kfupm">
+    <div class="container">
+        <div class="row-fluid">
+            <div class="span3">
+                <a target="_blank" href="http://www.kfupm.edu.sa/Default.aspx">King Fahd University of Petroleum &amp;
+                    Minerals</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<nav class="navbar navbar-inverse">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+            <ul class="nav navbar-nav">
+                <li class="active">
+                    <a href="MenteeReserve.html">Time Slots Reservation</a>
+                </li>
+                <li>
+                    <a href="MenteeMyReservations.html">My Upcoming Reservations</a>
+                </li>
+                <li>
+                    <a href="MenteeHistory.html">History</a>
+                </li>
+
+                <!--    -->
+                <!--        <li class="">-->
+                <!--            <a href="/history-admin/">Technician Wise</a>-->
+                <!--        </li>-->
+                <!--        <li class="">-->
+                <!--            <a href="/history-admin-job-status/">Job Status Wise</a>-->
+                <!--        </li>-->
+                <!--    -->
+                <!--    -->
+                <!--         <li class="">-->
+                <!--            <a href="/present-day-reservations/">Today Reservations</a>-->
+                <!--        </li>-->
+                <!--        <li class="">-->
+                <!--            <a href="/date-wise-reservations/">Date Wise</a>-->
+                <!--        </li>-->
+                <!--    -->
+
+            </ul>
+
+
+            <ul class="nav navbar-nav navbar-right">
+                <p class="navbar-text">Welcome Reem Abdulaziz Almutlaq</p>
+                <li><a href="/logout/"><span class="glyphicon glyphicon-off" aria-hidden="true"></span> Logout</a>
+                </li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+
+<br>
+<!-- Page Content -->
+<!-- <div class="card">-->
+<!--        <h5 class="card-header">Featured</h5>-->
+<!--        <div class="card-body">-->
+<!--            <h5 class="card-title">Special title treatment</h5>-->
+<!--            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>-->
+<!--            <a href="#" class="btn btn-primary">Go somewhere</a>-->
+<!--        </div>-->
+<!--    </div>-->
+<div class="container">
+
+
+    <!-- Page Content -->
+    <div class="row">
+        <!-- /.column -->
+        <Form class="col-md-12">
+            <h1>Time slot reservation page for Mentee </h1>
+            <h3>Choose any mentor to see his/her available time slots for mentoring session</h3>
+            <hr>
+
+            <form class="form-horizontal" method="post">
+                <div class="form-group">
+                    <label for="selectMentor" class="col-sm-3 control-label"> Mentee</label>
+                    <div class="col-sm-9">
+                        <label name="venue" id="venue" class="form-control" disabled>
+                            Reem Abdulaziz Almutlaq, Maryam Abdullah Albutish</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="selectMentor" class="col-sm-3 control-label"> Mentors</label>
+                    <div class="col-sm-9">
+                        <select name="venue" id="venue" class="form-control">
+                            <option value="ei" selected=true>Select a Mentor</option>
+                            <option value="online" selected>Mr. Ahmed Al-Qahtani (CEO, Goody)</option>
+                            <option value="online">Mr. Umer Shuraim Aljauwad (Director R&D, GMC )</option>
+                            <option value="other">Mrs. Farah Al-Subairi (Marketing Manager Eastern Province, Taco)
+                            </option>
+                            <option value="other">Miss. Sarah Al-Otaibi (Country Sales Director, Saco)</option>
+                        </select>
+                    </div>
+                </div>
+
+            </Form>
+
+
+            <div class="col-md-12">
+                <h3>Available Slots for Mr. Ahmed Al-Qahtani (CEO, Goody Inc.)</h3>
+                <a type="submit" class="btn btn-primary btn-sm" href="MenteeMyReservations.html">View All My
+                    Reservations</a>
+                <hr>
+
+
+                <div class="row m-reservation">
+                    <div class="col-sm-9">
+
+                        <p>
+
+                            <strong><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
+                                Date:</strong> July 14, 2021<br>
+                            <strong><span class="glyphicon glyphicon-time" aria-hidden="true"></span> Start
+                                Time:</strong>7:30 AM <b> - </b> <strong> End Time:</strong>11:30 AM <br>
+                            <strong><span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+                                Venue:</strong> EI<br>
+                        </p>
+                    </div>
+
+                    <div class="col-sm-2">
+                        <p>
+                        </p>
+                        <input type="hidden" name="csrfmiddlewaretoken"
+                               value="nLjI2urcJrvkHyV449qNdKHw2dXAh1wgXDhSjvuOe1NSfwcmuAM0In06IzKs6m1W">
+                        <button type="checkbox" class="btn btn-primary btn-sm"><span
+                                class="glyphicon glyphicon-unchecked" aria-hidden="true"></span> Select
+                        </button>
+                        <!--                    <button type="submit" class="btn btn-primary btn-lg"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span>  Delete</button>-->
+
+                        <!--                    <a href="/delete/49/"> Delete</a>-->
+                        <p></p>
+                    </div>
+                </div>
+                <!-- /.reservation -->
+
+
+                <div class="row m-reservation">
+                    <div class="col-sm-9">
+                        <p>
+
+                            <strong><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
+                                Date:</strong> July 15, 2021<br>
+                            <strong><span class="glyphicon glyphicon-time" aria-hidden="true"></span> Start
+                                Time:</strong>12:30 AM <b> - </b> <strong> End Time:</strong>4:30 PM <br>
+                            <strong><span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+                                Venue:</strong> Online<br>
+                        </p>
+                    </div>
+
+                    <div class="col-sm-2">
+                        <p>
+                        </p>
+                        <button type="checkbox" class="btn btn-primary btn-sm"><span
+                                class="glyphicon glyphicon-unchecked" aria-hidden="true"></span> Select
+                        </button>
+                        <p></p>
+                    </div>
+                </div>
+                <!-- /.reservation -->
+
+
+                <div class="row m-reservation">
+                    <div class="col-sm-9">
+                        <p>
+
+                            <strong><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
+                                Date:</strong> July 16, 2021<br>
+                            <strong><span class="glyphicon glyphicon-time" aria-hidden="true"></span> Start
+                                Time:</strong>7:30 AM <b> - </b> <strong> End Time:</strong>4:30 PM <br>
+                            <strong><span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+                                Venue:</strong> Flexible<br>
+                        </p>
+                    </div>
+
+                    <div class="col-sm-2">
+                        <p>
+                        </p>
+                        <button type="checkbox" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-check"
+                                                                                     aria-hidden="true"></span> Select
+                        </button>
+                        <p></p>
+                    </div>
+                </div>
+                <!-- /.reservation -->
+                <div class="col-md-12">
+
+
+                </div>
+            </div>
+
+
+        </form>
+
+    </div>
+    <!-- /.column -->
+</div>
+<!-- /.row -->
+
+
+<!-- /.row -->
+
+<!-- Footer -->
+
+<div class="row navbar-fixed-bottom">
+    <hr>
+    <div class="col-lg-12" align="center">
+        <p>©2021, Mentoring Sessions Reservation, All Rights Reserved<br>
+            King Fahd University of Petroleum &amp; Minerals
+        </p>
+    </div>
+</div>
+<!-- /.row -->
+
+</div>
+<!-- /.container -->
+
+
+<script>
+    $(document).ready(function () {
+
+        $('#id_technician').change(function () {
+            for (var i = 1; i < 9; i++) {
+                $('#label_' + i).show();
+            }
+            var techid = $('#id_technician option:selected').val();
+            if (techid == "") {
+                alert("Please Select Technician");
+                return;
+            }
+            var reservedate = $('#date').val();
+            if (reservedate == "") {
+                return;
+            }
+
+            var data_to_send = {
+                "techid": techid,
+                "date": reservedate,
+
+                csrfmiddlewaretoken: "xJStT2htWKSQmTl4dHdRgEDPQhKKvDxw7BQDa3k5rkaoURCmD8z4LhWpwDxCkY2c"
+            };
+            $.ajax({
+                type: "POST",
+                dataType: "json",
+                url: "/get_slots",
+                data: data_to_send,
+                cache: false,
+                success: function (data) {
+                    for (var i = 0; i < data.length; i++) {
+                        $('#label_' + data[i] + ' input').attr('checked', false);
+                        $('#label_' + data[i]).removeClass('active').hide();
+                        $('#label_' + data[i] + ' .glyphicon').removeClass('glyphicon-check').addClass('glyphicon-unchecked');
+                    }
+                },
+                error: function (textStatus, errorThrown) {
+                    alert('tech change error')
+                }
+            });
+        });
+
+        $('#date').change(function () {
+            for (var i = 1; i < 9; i++) {
+                $('#label_' + i).show();
+            }
+            var techid = $('#id_technician option:selected').val();
+            if (techid == "") {
+                alert("Please Select Technician");
+                return;
+            }
+            var reservedate = $('#date').val();
+            var data_to_send = {
+                "techid": techid,
+                "date": reservedate,
+                csrfmiddlewaretoken: "xJStT2htWKSQmTl4dHdRgEDPQhKKvDxw7BQDa3k5rkaoURCmD8z4LhWpwDxCkY2c"
+            };
+            $.ajax({
+                type: "POST",
+                dataType: "json",
+                url: "/get_slots",
+                data: data_to_send,
+                cache: false,
+                success: function (data) {
+                    for (var i = 0; i < data.length; i++) {
+                        $('#label_' + data[i] + ' input').attr('checked', false);
+                        $('#label_' + data[i]).removeClass('active').hide();
+                        $('#label_' + data[i] + ' .glyphicon').removeClass('glyphicon-check').addClass('glyphicon-unchecked');
+                    }
+                },
+                error: function (textStatus, errorThrown) {
+                    alert('date change error')
+                }
+            });
+        });
+
+    });
+</script>
+
+
+<script>
+    $(function () {
+        $('body').on('click', '.btn-checkbox', function (e) {
+            e.stopPropagation();
+            e.preventDefault();
+            var $checkbox = $(this).find(':input[type=checkbox]');
+            if ($checkbox.length) {
+                var $icon = $(this).find('[data-icon-on]');
+                if ($checkbox.is(':checked')) {
+                    unchecked($checkbox);
+                } else {
+                    checked($checkbox);
+                }
+                return;
+            }
+        });
+    });
+
+
+    function checked($input) {
+        var $button = $input.closest('.btn');
+        var $icon = $button.find('[data-icon-on]');
+        $button.addClass('active');
+        $input.prop('checked', true);
+        $icon.css('width', $icon.width());
+        $icon.removeAttr('class').addClass($icon.data('icon-on'));
+        $input.trigger('change');
+    }
+
+    function unchecked($input) {
+        var $button = $input.closest('.btn');
+        var $icon = $button.find('[data-icon-on]');
+        $button.removeClass('active');
+        $input.prop('checked', false);
+        $icon.css('width', $icon.width());
+        $icon.removeAttr('class').addClass($icon.data('icon-off'));
+        $input.trigger('change');
+    }
+</script>
+
+
+</body>
+</html>
