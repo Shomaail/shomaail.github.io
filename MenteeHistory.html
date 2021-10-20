@@ -29,7 +29,12 @@
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/css/bootstrap-select.min.css">
+<style>
+           .container {
 
+            width: 1500px;
+        }
+</style>
 </head>
 <body cz-shortcut-listen="true">
 <div class="container-fluid" id="kfupm">
@@ -102,11 +107,24 @@
             <hr>
 
             <div class="form-group">
-                <label for="selectMentor" class="col-sm-3 control-label"> Mentee</label>
+                <label for="selectMentor" class="col-sm-3 control-label"> Team</label>
                 <div class="col-sm-9">
                     <label name="venue" id="venue" class="form-control" disabled> Maryam Abdullah Albutish, Reem
                         Abdulaziz Almutlaq
                     </label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="selectMentor" class="col-sm-3 control-label"> Mentors</label>
+                <div class="col-sm-9">
+                    <select name="venue" id="venue" class="form-control">
+                        <option value="ei" selected=true>Select a Mentor</option>
+                        <option value="online" selected>Mr. Ahmed Al-Qahtani (CEO, Goody)</option>
+                        <option value="online">Mr. Umer Shuraim Aljauwad (Director R&D, GMC )</option>
+                        <option value="other">Mrs. Farah Al-Subairi (Marketing Manager Eastern Province, Taco)
+                        </option>
+                        <option value="other">Miss. Sarah Al-Otaibi (Country Sales Director, Saco)</option>
+                    </select>
                 </div>
             </div>
 
