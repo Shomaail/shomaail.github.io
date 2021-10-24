@@ -185,26 +185,66 @@
     <div class="row">
         <!-- /.column -->
 
+
         <div class="col-md-12">
-            <h1>Mentorship Platform - Admin View</h1>
-            <a type="submit" href="UpcomingReservations.html" class="btn btn-primary btn-sm"><span
-                    class="glyphicon glyphicon-sunglasses"
-                    aria-hidden="true"></span> Upcoming Reservations
-            </a>
-            <a type="submit" href="PastReservations.html" class="btn btn-primary btn-sm"><span
-                    class="glyphicon glyphicon-sunglasses"
-                    aria-hidden="true"></span> Past Reservations
-            </a>
+            <h3>List Of Mentors - (
+                Semester:<select>
+                    <option>211</option>
+                    <option>212</option>
+                    <option>213</option>
+                    <option>221</option>
+                    <option>222</option>
+                    <option>223</option>
+                </select>)
 
-            <h3>List Of Mentors</h3>
+            </h3>
             <hr>
+            <hr>
+            <div style="float: left">
+                <textarea style="width: 965px; margin: 0px 79.1016px 0px 0px; height: 48px;"
+                          class="form-control"></textarea>
+            </div>
+            <div style="float: left">
+                <button class="btn btn-primary btn-group-lg" type="button"><span class="glyphicon glyphicon-search"
+                                                                                 aria-hidden="true"></span> Filter
+                </button>
 
+            </div>
+            <hr>
             <table style="width: 100%;" border="1" cellpadding="30">
                 <tbody>
                 <tr style="height: 21px;">
                     <td style="height: 21px; width: 21.0182%;"><b>S. No.</b></td>
                     <td style="height: 21px; width: 21.0182%;text-align:center"><b> Mentor's Name</b></td>
-                    <td style="height: 21px; width: 21.0182%;"></td>
+                    <td style="height: 21px; width: 21.0182%;">
+                        <p>
+                            <button type="submit" class="btn btn-primary btn-sm"><span
+                                    class="glyphicon glyphicon-envelope" aria-hidden="true"></span> Send Invitation
+                            </button>
+                        </p>
+                        <p>
+                            <button type="submit" class="btn btn-primary btn-sm"><span
+                                    class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add to Semester
+                            </button>
+                            <button type="submit" class="btn btn-warning btn-sm"><span
+                                    class="glyphicon glyphicon-minus" aria-hidden="true"></span> Remove from Semester
+                            </button>
+                            Semester:<select>
+                            <option>211</option>
+                            <option>212</option>
+                            <option>213</option>
+                            <option>221</option>
+                            <option>222</option>
+                            <option>223</option>
+                        </select>
+
+                        </p>
+                        <button type="submit" class="btn btn-primary btn-sm"><span
+                                class="glyphicon glyphicon-check" aria-hidden="true"></span> Select All
+                        </button>
+                    </td>
+                    <td style="height: 21px; width: 56.9818%;text-align:center"><b>Mentee Request for Invitation</b>
+                    </td>
                     <td style="height: 21px; width: 56.9818%;text-align:center"><b>Type</b></td>
                     <td style="height: 21px; width: 56.9818%;text-align:center"><b>Association</b></td>
                     <td style="height: 21px; width: 56.9818%;text-align:center"><b>Expertise</b></td>
@@ -221,14 +261,23 @@
                         </button>
                         <p>Sent Date: 6 Sept 2021</p>
                     </td>
+                    <td style="height: 21px; width: 56.9818%;text-align:center"> Reason: <textarea></textarea>
+                        </br>
+                        <a href="EmailApproval.html" type="submit" class="btn btn-primary btn-sm"><span
+                                class="glyphicon glyphicon-ok"
+                                aria-hidden="true"></span> Accept
+                        </a>
+                        <a href="EmailDeclination.html" type="submit" class="btn btn-danger btn-sm"><span
+                                class="glyphicon glyphicon-remove"
+                                aria-hidden="true"></span> Deny
+                        </a>
+                    </td>
+
                     <td style="height: 21px; width: 56.9818%;text-align:center">External</td>
                     <td style="height: 21px; width: 56.9818%;text-align:center">Taqa Consulting Firm</td>
                     <td style="height: 21px; width: 56.9818%;text-align:center">Marketing Director</td>
-                    <td style="height: 21px; width: 56.9818%;text-align:center"><a type="submit"
-                                                                                   href="MentorHistory-AdminView.html"
-                                                                                   class="btn btn-primary btn-sm"><span
-                            class="glyphicon glyphicon-sunglasses"
-                            aria-hidden="true"></span> 3
+                    <td style="height: 21px; width: 56.9818%;text-align:center"><a type="submit" href="MentorHistory-AdminView.html" class="btn btn-primary btn-sm">
+                        <span class="glyphicon glyphicon-sunglasses" aria-hidden="true"></span> 3
                     </a></td>
 
                 </tr>
@@ -239,19 +288,30 @@
                         <p>basri@mulhem.com.sa</p>
                     </td>
                     <td style="height: 21px; width: 21.0182%;text-align:center">
-                        <a href="EmailNonKFUPMMentor.html" type="submit" class="btn btn-primary btn-sm"><span
+                        <button type="checkbox" class="btn btn-primary btn-sm"><span
+                                class="glyphicon glyphicon-unchecked" aria-hidden="true"></span>
+                        </button>
+                        <button type="submit" class="btn btn-primary btn-sm"><span
                                 class="glyphicon glyphicon-envelope" aria-hidden="true"></span> Send Invitation
-                        </a>
+                        </button>
 
+                    </td>
+                    <td style="height: 21px; width: 56.9818%;text-align:center"> Reason: <textarea></textarea>
+                        </br>
+                        <a href="EmailApproval.html" type="submit" class="btn btn-primary btn-sm"><span
+                                class="glyphicon glyphicon-ok"
+                                aria-hidden="true"></span> Accept
+                        </a>
+                        <a href="EmailDeclination.html" type="submit" class="btn btn-danger btn-sm"><span
+                                class="glyphicon glyphicon-remove"
+                                aria-hidden="true"></span> Deny
+                        </a>
                     </td>
                     <td style="height: 21px; width: 56.9818%;text-align:center">External</td>
                     <td style="height: 21px; width: 56.9818%;text-align:center">Mulhem Contracting Firm</td>
                     <td style="height: 21px; width: 56.9818%;text-align:center">Sales Director</td>
-                    <td style="height: 21px; width: 56.9818%;text-align:center"><a type="submit"
-                                                                                   href="MentorHistory-AdminView.html"
-                                                                                   class="btn btn-primary btn-sm"><span
-                            class="glyphicon glyphicon-sunglasses"
-                            aria-hidden="true"></span> 5
+                    <td style="height: 21px; width: 56.9818%;text-align:center"><a type="submit" href="MentorHistory-AdminView.html" class="btn btn-primary btn-sm"><span
+                            class="glyphicon glyphicon-sunglasses" aria-hidden="true"></span> 5
                     </a></td>
                 </tr>
                 <tr style="height: 21px;">
@@ -261,9 +321,22 @@
                         <p>fawza@kfupm.edu.sa</p>
                     </td>
                     <td style="height: 21px; width: 21.0182%;text-align:center">
-                        <a type="submit" class="btn btn-primary btn-sm" href="EmailKFUPMMentor.html"><span
+                        <button type="checkbox" class="btn btn-primary btn-sm"><span
+                                class="glyphicon glyphicon-unchecked" aria-hidden="true"></span>
+                        </button>
+                        <button type="submit" class="btn btn-primary btn-sm"><span
                                 class="glyphicon glyphicon-envelope" aria-hidden="true"></span> Send Invitation
-
+                        </button>
+                    </td>
+                    <td style="height: 21px; width: 56.9818%;text-align:center"> Reason: <textarea></textarea>
+                        </br>
+                        <a href="EmailApproval.html" type="submit" class="btn btn-primary btn-sm"><span
+                                class="glyphicon glyphicon-ok"
+                                aria-hidden="true"></span> Accept
+                        </a>
+                        <a href="EmailDeclination.html" type="submit" class="btn btn-danger btn-sm"><span
+                                class="glyphicon glyphicon-remove"
+                                aria-hidden="true"></span> Deny
                         </a>
                     </td>
                     <td style="height: 21px; width: 56.9818%;text-align:center">KFUPM</td>
@@ -282,6 +355,17 @@
                     <td style="height: 21px; width: 21.0182%;text-align:center">
 
                     </td>
+                    <td style="height: 21px; width: 56.9818%;text-align:center"> Reason: <textarea></textarea>
+                        </br>
+                        <a href="EmailApproval.html" type="submit" class="btn btn-primary btn-sm"><span
+                                class="glyphicon glyphicon-ok"
+                                aria-hidden="true"></span> Accept
+                        </a>
+                        <a href="EmailDeclination.html" type="submit" class="btn btn-danger btn-sm"><span
+                                class="glyphicon glyphicon-remove"
+                                aria-hidden="true"></span> Deny
+                        </a>
+                    </td>
                     <td style="height: 21px; width: 56.9818%;text-align:center">EI</td>
                     <td style="height: 21px; width: 56.9818%;text-align:center">EI</td>
                     <td style="height: 21px; width: 56.9818%;text-align:center">Business Strategy</td>
@@ -294,6 +378,17 @@
                     <td style="height: 21px; width: 21.0182%;text-align:center">
 
                     </td>
+                    <td style="height: 21px; width: 56.9818%;text-align:center"> Reason: <textarea></textarea>
+                        </br>
+                        <a href="EmailApproval.html" type="submit" class="btn btn-primary btn-sm"><span
+                                class="glyphicon glyphicon-ok"
+                                aria-hidden="true"></span> Accept
+                        </a>
+                        <a href="EmailDeclination.html" type="submit" class="btn btn-danger btn-sm"><span
+                                class="glyphicon glyphicon-remove"
+                                aria-hidden="true"></span> Deny
+                        </a>
+                    </td>
                     <td style="height: 21px; width: 56.9818%;text-align:center">EI</td>
                     <td style="height: 21px; width: 56.9818%;text-align:center">EI</td>
                     <td style="height: 21px; width: 56.9818%;text-align:center">Business Strategy</td>
@@ -305,6 +400,17 @@
                     <td style="height: 21px; width: 21.0182%;">&nbsp; Dr. Rifaqat</td>
                     <td style="height: 21px; width: 21.0182%;text-align:center">
                     </td>
+                    <td style="height: 21px; width: 56.9818%;text-align:center"> Reason: <textarea></textarea>
+                        </br>
+                        <a href="EmailApproval.html" type="submit" class="btn btn-primary btn-sm"><span
+                                class="glyphicon glyphicon-ok"
+                                aria-hidden="true"></span> Accept
+                        </a>
+                        <a href="EmailDeclination.html" type="submit" class="btn btn-danger btn-sm"><span
+                                class="glyphicon glyphicon-remove"
+                                aria-hidden="true"></span> Deny
+                        </a>
+                    </td>
                     <td style="height: 21px; width: 56.9818%;text-align:center">EI</td>
                     <td style="height: 21px; width: 56.9818%;text-align:center">EI</td>
                     <td style="height: 21px; width: 56.9818%;text-align:center">Business Strategy</td>
@@ -312,215 +418,25 @@
                 </tr>
                 <tr style="height: 21px;">
                     <td style=";height: 21px;">
-                        <button type="submit" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-plus"
+                        <a href="EmailInvitation.html" type="submit" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-plus"
                                                                                    aria-hidden="true"></span> Add
-                        </button>
+                        </a>
                     </td>
-                    <td colspan="7" style="height: 21px; ">&nbsp;</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Total</td>
+                    <td>KFUPM:3
+                        External: 8
+                        EI: 24
+                        Total: 35
+                    </td>
+
 
                 </tr>
                 </tbody>
             </table>
-
-            <hr>
-            <h3>List Of Teams</h3>
-            <hr>
-            <table style="width: 100%;" border="1" cellpadding="30">
-                <tbody>
-                <tr style="height: 21px;">
-                    <td style="height: 21px; "><b>S. No.</b></td>
-                    <td style="height: 21px; text-align:center"><b>Mentee's Name</b></td>
-                    <td style="height: 21px;"><b>Team Name</b></td>
-                    <td style="height: 21px; text-align:center"><b>Program</b></td>
-                    <td style="height: 21px; text-align:center"><b>Idea Description</b></td>
-                    <td style="height: 21px; text-align:center"><b>Sessions Outcomes</b></td>
-                    <td style="height: 21px; text-align:center"><b>Sessions Conducted</b></td>
-                </tr>
-                <tr style="height: 21px;">
-                    <td style="height: 21px; ">1</td>
-                    <td style="height: 21px; ">&nbsp;
-                        <p><b>Mr. Yousef Alesayi</b></p>
-                        <p>qahtani@kfupm.edu.sa</p>,
-                        <p><b>Mr. Mohammed Al-Khalaf</b></p>
-                        <p>Khalaf@kfupm.edu.sa</p>
-
-
-                    </td>
-                    <td style="height: 21px; text-align:center">
-                        <h4>Mega Construction Company</h4>
-                    </td>
-                    <td style="height: 21px; text-align:center">EEL</td>
-                    <td style="height: 21px; text-align:center">To make a business for offering smart
-                        construction services inside kingdom
-                    </td>
-                    <td style="height: 21px;text-align:center">
-                        <ul>
-                            <li>Nice Idea but need to have proper plan (Mentor: Wajdy Tamimi, CEO, Waqf.com)</li>
-                            <li>Lacking of resources and talent found (Mentor: Hena Albakar, Lead Developer, Extra
-                                Supermarket )
-                            </li>
-                        </ul>
-
-
-                    </td>
-                    <td style="height: 21px;text-align:center"><a type="submit" class="btn btn-primary btn-sm"
-                                                                  href="MenteeHistory-AdminView.html"><span
-                            class="glyphicon glyphicon-sunglasses" aria-hidden="true"></span> 2
-                    </a></td>
-
-
-                </tr>
-                <tr style="height: 21px;">
-                    <td style="height: 21px;">2</td>
-                    <td style="height: 21px; ">&nbsp; <p><b>Mr. Mansoor Al-Huraib</b></p>
-                        <p>Huraib@kfupm.edu.sa</p>
-                    </td>
-                    <td style="height: 21px; text-align:center">
-                        <h4>Soft Solutions</h4>
-                    </td>
-                    <td style="height: 21px;  text-align:center">EEL</td>
-                    <td style="height: 21px;text-align:center"><h4>To make a business for offering software
-                        solutions</h4>
-                    </td>
-                    <td style="height: 21px; text-align:center"></td>
-                    <td style="height: 21px; text-align:center">0</td>
-                </tr>
-                <tr style="height: 21px;">
-                    <td style=";height: 21px;">
-                        <button type="submit" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-plus"
-                                                                                   aria-hidden="true"></span> Add
-                        </button>
-                    </td>
-                    <td colspan="6" style="height: 21px; ">&nbsp;</td>
-
-                </tr>
-                </tbody>
-            </table>
-
-            <hr>
-            <hr>
-            <h3>Mentor Feedback Form</h3>
-            <hr>
-
-            <table style="width: 100%;" border="1" cellpadding="30">
-                <tbody>
-                <tr style="height: 21px;">
-                    <td style="height: 21px; "><b>S. No.</b></td>
-                    <td style="height: 21px; text-align:center"><b>Question Text</b></td>
-                </tr>
-                <tr style="height: 21px;">
-                    <td style="height: 21px; ">1</td>
-                    <td style="height: 21px; ">&nbsp;
-                        <p>The mentee arrives at meetings on time</p>
-                    </td>
-
-
-                </tr>
-                <tr style="height: 21px;">
-                    <td style="height: 21px;">2</td>
-                    <td style="height: 21px; ">&nbsp; The mentee is prepared to brief me on recent
-                        progress and achievements
-                    </td>
-
-                </tr>
-                <tr style="height: 21px;">
-                    <td style="height: 21px;">3</td>
-                    <td style="height: 21px; ">&nbsp; The mentee made use of feedback provided
-                        through previous mentoring session
-                    </td>
-
-                </tr>
-                <tr style="height: 21px;">
-                    <td style="height: 21px;">4</td>
-                    <td style="height: 21px; ">&nbsp; My mentee’s behavior and attitude was generally professional and
-                        courteous
-                    </td>
-
-                </tr>
-                <tr style="height: 21px;">
-                    <td style="height: 21px;">5</td>
-                    <td style="height: 21px; ">&nbsp; I am Highly Satisfied with the session</td>
-
-                </tr>
-                <tr style="height: 21px;">
-                    <td style="height: 21px;">
-                        <button type="submit" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-plus"
-                                                                                   aria-hidden="true"></span> Add
-                        </button>
-                    </td>
-                    <td style="height: 21px; ">&nbsp;</td>
-
-                </tr>
-                </tbody>
-            </table>
-            <hr>
-            <hr>
-            <h3>Mentee Feedback Form</h3>
-            <hr>
-            <table style="width: 100%;" border="1" cellpadding="30">
-                <tbody>
-                <tr style="height: 21px;">
-                    <td style="height: 21px; "><b>S. No.</b></td>
-                    <td style="height: 21px; text-align:center"><b>Question Text</b></td>
-                </tr>
-                <tr style="height: 21px;">
-                    <td style="height: 21px; ">1</td>
-                    <td style="height: 21px; ">&nbsp;
-                        <p>The mentor arrives at meetingon time</p>
-                    </td>
-
-
-                </tr>
-                <tr style="height: 21px;">
-                    <td style="height: 21px;">2</td>
-                    <td style="height: 21px; ">&nbsp; The mentor runs effective sessions</td>
-
-                </tr>
-                <tr style="height: 21px;">
-                    <td style="height: 21px;">3</td>
-                    <td style="height: 21px; ">&nbsp; The mentor provides appropriate feedback in a constructive
-                        manner
-                    </td>
-
-                </tr>
-                <tr style="height: 21px;">
-                    <td style="height: 21px;">4</td>
-                    <td style="height: 21px; ">&nbsp; The mentor is aware of available resources and can identify
-                        valuable opportunities to help my startup
-                    </td>
-
-                </tr>
-                <tr style="height: 21px;">
-                    <td style="height: 21px;">5</td>
-                    <td style="height: 21px; ">&nbsp; The mentor demonstrated a reasonable interest/concern towards
-                        mentee
-                    </td>
-
-                </tr>
-                <tr style="height: 21px;">
-                    <td style="height: 21px;">6</td>
-                    <td style="height: 21px; ">&nbsp;The mentor’s behavior and attitude generally is an example of
-                        professionalism
-                    </td>
-
-                </tr>
-                <tr style="height: 21px;">
-                    <td style="height: 21px;">7</td>
-                    <td style="height: 21px; ">&nbsp;I am highly satisfied with the session</td>
-
-                </tr>
-                <tr style="height: 21px;">
-                    <td style="height: 21px;">
-                        <button type="submit" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-plus"
-                                                                                   aria-hidden="true"></span> Add
-                        </button>
-                    </td>
-                    <td style="height: 21px; ">&nbsp;</td>
-
-                </tr>
-                </tbody>
-            </table>
-
         </div>
         <!-- /.column -->
     </div>
