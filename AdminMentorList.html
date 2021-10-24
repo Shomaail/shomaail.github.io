@@ -8,9 +8,7 @@
     <title>Admin View</title>
     <link rel="icon" href=" /static/images/favicon.ico">
 
-    <!-- Bootstrap Core CSS -->
-    <!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"-->
-    <!--          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">-->
+
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link href="static/css/bootstrap.min.css" rel="stylesheet" type="text/css">
@@ -186,19 +184,29 @@
         <!-- /.column -->
 
         <div class="col-md-12">
-            <h3>List Of Mentors</h3>
+            <h3>List Of Mentors - (
+                Semester:<select>
+                    <option>211</option>
+                    <option>212</option>
+                    <option>213</option>
+                    <option>221</option>
+                    <option>222</option>
+                    <option>223</option>
+                </select>)
+
+            </h3>
             <hr>
             <hr>
             <div style="float: left">
                 <textarea style="width: 965px; margin: 0px 79.1016px 0px 0px; height: 48px;"
                           class="form-control"></textarea>
             </div>
-            <div>
+            <div style="float: left">
                 <button class="btn btn-primary btn-group-lg" type="button"><span class="glyphicon glyphicon-search"
                                                                                  aria-hidden="true"></span> Filter
                 </button>
-            </div>
 
+            </div>
             <hr>
             <table style="width: 100%;" border="1" cellpadding="30">
                 <tbody>
@@ -206,9 +214,28 @@
                     <td style="height: 21px; width: 21.0182%;"><b>S. No.</b></td>
                     <td style="height: 21px; width: 21.0182%;text-align:center"><b> Mentor's Name</b></td>
                     <td style="height: 21px; width: 21.0182%;">
-                        <button type="submit" class="btn btn-primary btn-sm"><span
-                                class="glyphicon glyphicon-envelope" aria-hidden="true"></span> Send Selected
-                        </button>
+                        <p>
+                            <button type="submit" class="btn btn-primary btn-sm"><span
+                                    class="glyphicon glyphicon-envelope" aria-hidden="true"></span> Send Invitation
+                            </button>
+                        </p>
+                        <p>
+                            <button type="submit" class="btn btn-primary btn-sm"><span
+                                    class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add to Semester
+                            </button>
+                            <button type="submit" class="btn btn-warning btn-sm"><span
+                                    class="glyphicon glyphicon-minus" aria-hidden="true"></span> Remove from Semester
+                            </button>
+                            Semester:<select>
+                            <option>211</option>
+                            <option>212</option>
+                            <option>213</option>
+                            <option>221</option>
+                            <option>222</option>
+                            <option>223</option>
+                        </select>
+
+                        </p>
                         <button type="submit" class="btn btn-primary btn-sm"><span
                                 class="glyphicon glyphicon-check" aria-hidden="true"></span> Select All
                         </button>
@@ -246,11 +273,8 @@
                     <td style="height: 21px; width: 56.9818%;text-align:center">External</td>
                     <td style="height: 21px; width: 56.9818%;text-align:center">Taqa Consulting Firm</td>
                     <td style="height: 21px; width: 56.9818%;text-align:center">Marketing Director</td>
-                    <td style="height: 21px; width: 56.9818%;text-align:center"><a type="submit"
-                                                                                   href="MentorHistory-AdminView.html"
-                                                                                   class="btn btn-primary btn-sm"><span
-                            class="glyphicon glyphicon-sunglasses"
-                            aria-hidden="true"></span> 3
+                    <td style="height: 21px; width: 56.9818%;text-align:center"><a type="submit" href="MentorHistory-AdminView.html" class="btn btn-primary btn-sm">
+                        <span class="glyphicon glyphicon-sunglasses" aria-hidden="true"></span> 3
                     </a></td>
 
                 </tr>
@@ -283,11 +307,8 @@
                     <td style="height: 21px; width: 56.9818%;text-align:center">External</td>
                     <td style="height: 21px; width: 56.9818%;text-align:center">Mulhem Contracting Firm</td>
                     <td style="height: 21px; width: 56.9818%;text-align:center">Sales Director</td>
-                    <td style="height: 21px; width: 56.9818%;text-align:center"><a type="submit"
-                                                                                   href="MentorHistory-AdminView.html"
-                                                                                   class="btn btn-primary btn-sm"><span
-                            class="glyphicon glyphicon-sunglasses"
-                            aria-hidden="true"></span> 5
+                    <td style="height: 21px; width: 56.9818%;text-align:center"><a type="submit" href="MentorHistory-AdminView.html" class="btn btn-primary btn-sm"><span
+                            class="glyphicon glyphicon-sunglasses" aria-hidden="true"></span> 5
                     </a></td>
                 </tr>
                 <tr style="height: 21px;">
@@ -394,9 +415,9 @@
                 </tr>
                 <tr style="height: 21px;">
                     <td style=";height: 21px;">
-                        <button type="submit" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-plus"
+                        <a href="EmailInvitation.html" type="submit" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-plus"
                                                                                    aria-hidden="true"></span> Add
-                        </button>
+                        </a>
                     </td>
                     <td></td>
                     <td></td>
