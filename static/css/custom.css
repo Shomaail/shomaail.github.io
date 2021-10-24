@@ -20,20 +20,23 @@ html, body {
 .ictc-logo {
     margin: 20px 0px;
 }
-.btn-default.active.focus, .btn-default.active:focus, .btn-default.active:hover, .btn-default:active.focus, .btn-default:active:focus, .btn-default:active:hover, .open>.dropdown-toggle.btn-default.focus, .open>.dropdown-toggle.btn-default:focus, .open>.dropdown-toggle.btn-default:hover {
+
+.btn-default.active.focus, .btn-default.active:focus, .btn-default.active:hover, .btn-default:active.focus, .btn-default:active:focus, .btn-default:active:hover, .open > .dropdown-toggle.btn-default.focus, .open > .dropdown-toggle.btn-default:focus, .open > .dropdown-toggle.btn-default:hover {
     color: #fff !important;
     background-color: #007d40 !important;
     border-color: #007d40 !important;
 }
+
 .btn-default.active.focus, .btn-default.active:focus {
     color: #fff !important;
     background-color: #007d40 !important;
     border-color: #007d40 !important;
 }
+
 .btn-default.active, .btn-default:active, .open > .dropdown-toggle.btn-default {
-color: #fff;
-background-color: #007d40;
-border-color: #007d40;
+    color: #fff;
+    background-color: #007d40;
+    border-color: #007d40;
 }
 
 /* NAVBAR TOGGLE */
@@ -70,12 +73,12 @@ border-color: #007d40;
     border-color: #007d40;
 }
 
-.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:focus, .navbar-inverse .navbar-nav > .active > a:hover {
     color: #fff;
     background-color: #006d38;
 }
 
-.navbar-inverse .navbar-nav>li>a {
+.navbar-inverse .navbar-nav > li > a {
     color: #FFF;
 }
 
@@ -95,28 +98,31 @@ border-color: #007d40;
     margin-bottom: 5px;
 }
 
-.btn-group-lg>.btn, .btn-lg {
+.btn-group-lg > .btn, .btn-lg {
     border-radius: 0px;
 }
 
 /* Responsive Styles */
 
-@media(max-width:991px) {
+@media (max-width: 991px) {
     .customer-img, .img-related {
         margin-bottom: 30px;
     }
+
     .main-img {
         display: none;
     }
 }
 
-@media(max-width:767px) {
+@media (max-width: 767px) {
     .main-img {
         display: none;
     }
+
     .img-portfolio {
         margin-bottom: 15px;
     }
+
     header.carousel .carousel {
         height: 70%;
     }
@@ -146,7 +152,7 @@ footer {
     height: 125px;
 }
 
-.btn-primary.active, .btn-primary.focus, .btn-primary:active, .btn-primary:focus, .btn-primary:hover, .open>.dropdown-toggle.btn-primary {
+.btn-primary.active, .btn-primary.focus, .btn-primary:active, .btn-primary:focus, .btn-primary:hover, .open > .dropdown-toggle.btn-primary {
     background: #007d40;
 }
 
