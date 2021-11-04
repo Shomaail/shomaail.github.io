@@ -5,7 +5,7 @@
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <meta content="" name="description">
     <meta content="" name="author">
-    <title>Mentee Feeback Form</title>
+    <title>My Reservations</title>
     <link href=" /static/images/favicon.ico" rel="icon">
 
     <!-- Bootstrap Core CSS -->
@@ -34,6 +34,86 @@
 
             width: 1500px;
         }
+
+
+        /* Hide the browser's default radio button */
+        .container input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+        }
+
+        /* Create a custom radio button */
+        .checkmark {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 25px;
+            width: 25px;
+            background-color: #eee;
+            border-radius: 50%;
+        }
+
+        /* On mouse-over, add a grey background color */
+        .container:hover input ~ .checkmark {
+            background-color: #ccc;
+        }
+
+        /* When the radio button is checked, add a blue background */
+        .container input:checked ~ .checkmark {
+            background-color: #2196F3;
+        }
+
+        /* Create the indicator (the dot/circle - hidden when not checked) */
+        .checkmark:after {
+            content: "";
+            position: absolute;
+            display: none;
+        }
+
+        /* Show the indicator (dot/circle) when checked */
+        .container input:checked ~ .checkmark:after {
+            display: block;
+        }
+
+        /* Style the indicator (dot/circle) */
+        .container .checkmark:after {
+            top: 9px;
+            left: 9px;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: white;
+        }
+
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+            width: 100%;
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            text-align: left;
+            padding: 16px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        /*ul {*/
+        /*    list-style-type: none; !* Remove bullets *!*/
+        /*    padding: 0; !* Remove padding *!*/
+        /*    margin: 0; !* Remove margins *!*/
+        /*}*/
+
+        /*ul li {*/
+        /*    border: 1px solid #ddd; !* Add a thin border to each list item *!*/
+        /*    margin-top: -1px; !* Prevent double borders *!*/
+        /*    background-color: #f6f6f6; !* Add a grey background color *!*/
+        /*    padding: 12px; !* Add some padding *!*/
+        /*}*/
     </style>
 </head>
 <body cz-shortcut-listen="true">
@@ -42,8 +122,7 @@
         <div class="row-fluid">
             <div class="span3">
                 <a href="http://www.kfupm.edu.sa/Default.aspx" target="_blank">Entrepreneurship Institute - King Fahd
-                    University of Petroleum &amp;
-                    Minerals</a>
+                    University of Petroleum &amp; Minerals</a>
             </div>
         </div>
     </div>
@@ -66,36 +145,34 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
             <ul class="nav navbar-nav">
-                <li>
-                    <a href="MenteeInvitedMentorsList.html">Available Mentors</a>
-                </li>
-                <li>
-                    <a href="MenteeUninvitedMentorsList.html">All Mentors</a>
-                </li>                <li >
-                    <a href="MenteeNewMentors.html">New Mentor</a>
-                </li>
-
-                <li>
-                    <a href="MenteeReserve.html">Booking Page</a>
-                </li>
-
-                <li>
-                    <a href="MenteeMyReservations.html">Confirmed Sessions</a>
-                </li>
-                <li>
-                    <a href="MenteeHistory.html">Past Sessions</a>
-                </li>
                 <li class="active">
-                    <a href="MenteeProfile.html">Team Profile</a>
+                    <a href="AdminMentorList.html">List of Mentors</a>
+                </li>
+                <li>
+                    <a href="AdminTeamList.html">List Of Teams</a>
+                </li>
+                <li>
+                    <a href="AdminNewMentors.html">New Mentor Requests</a>
+                </li>
+                <li>
+                    <a href="AdminMentorFeedbackForm.html">Mentor Feedback Form</a>
                 </li>
 
-
+                <li>
+                    <a href="AdminMenteeFeedbackForm.html">Mentee Feedback Form</a>
+                </li>
+                <li>
+                    <a href="AdminUpcomingReservations.html">Upcoming Bookings</a>
+                </li>
+                <li>
+                    <a href="AdminPastReservations.html">Past Bookings</a>
+                </li>
             </ul>
 
 
             <ul class="nav navbar-nav navbar-right">
-                <li class="navbar-text">Welcome, Reem Abdulaziz Almutlaq</li>
-                <li class="navbar-text">(Mentee)</li>
+                <li class="navbar-text">Welcome, Mr. Mohammad Attia</li>
+                <li class="navbar-text">(Admin)</li>
                 <li><a href="Login.html"><span class="glyphicon glyphicon-off"></span> Logout
                 </a>
                 </li>
@@ -109,86 +186,95 @@
 <div class="container">
 
 
-    <!-- Page Content -->
-    <div class="row">
-        <!-- /.column -->
+    <h3>List Of New Mentor Requests</h3>
+    <hr>
 
-        <div class="col-md-12">
-            <h1>Team Profile</h1>
-            <h3>Following is the profile of team</h3>
-            <hr>
+    <table border="1" cellpadding="30" style="width: 100%;">
+        <tbody>
+        <tr style="height: 21px;">
+            <td style="height: 21px; width: 21.0182%;"><b> S. No.</b></td>
+            <td style="height: 21px; width: 21.0182%;text-align:center"><b> Mentor's Name</b></td>
+            <td style="height: 21px; width: 21.0182%;"><b> Email</b></td>
+            <td style="height: 21px; width: 56.9818%;text-align:center"><b> Invitation Request Status</b></td>
+            <td style="height: 21px; width: 56.9818%;text-align:center"><b> Justification</b></td>
+            <td style="height: 21px; width: 56.9818%;text-align:center"><b> LinkedIn Profile</b></td>
+            <td style="height: 21px; width: 56.9818%;text-align:center"><b> Webpage</b></td>
+            <td style="height: 21px; width: 56.9818%;text-align:center"><b> Requester Team Name</b></td>
+        </tr>
+        <tr style="height: 21px;">
+            <td style="height: 21px; width: 21.0182%;">1</td>
+            <td style="height: 21px; width: 21.0182%;">&nbsp; <p><b>Mr. Mohammed AlGhamdi</b></p>
+            </td>
+            <td style="height: 21px; width: 21.0182%;text-align:center">
+                alghamdi@nespak.com
+            </td>
+            <td style="text-align:center"> Declined <a class="btn btn-primary btn-sm"
+                                                       href="EmailDeclination.html"
+                                                       type="submit"><span
+                    aria-hidden="true"
+                    class="glyphicon glyphicon-sunglasses"></span>
+            </a></td>
+            <td style="height: 21px; width: 56.9818%;text-align:center"> I have previous sessions with him
+                <a class="btn btn-primary btn-sm" href="EmailApproval.html" type="submit"><span
+                        aria-hidden="true"
+                        class="glyphicon glyphicon-ok"></span> Accept
+                </a>
+                <a class="btn btn-danger btn-sm" href="EmailDeclination.html" type="submit"><span
+                        aria-hidden="true"
+                        class="glyphicon glyphicon-remove"></span> Deny
+                </a></td>
+            <td style="height: 21px; width: 56.9818%;text-align:center"> linkedin.com/alghamdi</td>
+            <td style="height: 21px; width: 56.9818%;text-align:center"> nespak.com/alghamdi</td>
+            <td style="height: 21px; width: 56.9818%;text-align:center"> ABC Software Solutions
+            </td>
 
-            <table border="1" cellpadding="30" style="width: 100%;">
-                <tbody>
+        </tr>
+        <tr style="height: 21px;">
+            <td style="height: 21px; width: 21.0182%;">2</td>
+            <td style="height: 21px; width: 21.0182%;">&nbsp; <p><b>Mr. Joseph Andrew</b></p>
+            </td>
+            <td style="height: 21px; width: 21.0182%;text-align:center">
+                andrew@siemens.com
+            </td>
+            <td style="text-align:center"> Accepted <a class="btn btn-primary btn-sm"
+                                                       href="EmailApproval.html"
+                                                       type="submit"><span
+                    aria-hidden="true"
+                    class="glyphicon glyphicon-sunglasses"></span>
+            </a></td>
+            <td style="height: 21px; width: 56.9818%;text-align:center"> My experience matches with this mentor <a
+                    class="btn btn-primary btn-sm" href="EmailApproval.html" type="submit"><span
+                    aria-hidden="true"
+                    class="glyphicon glyphicon-ok"></span> Accept
+            </a>
+                <a class="btn btn-danger btn-sm" href="EmailDeclination.html" type="submit"><span
+                        aria-hidden="true"
+                        class="glyphicon glyphicon-remove"></span> Deny
+                </a></td>
 
-                <tr style="height: 21px;">
-                    <td style="height: 21px; width: 21.0182%;"><h4>&nbsp;Mentee Name(s)</h4></td>
-                    <td style="height: 21px; width: 56.9818%;">&nbsp; &nbsp;Reem Abdulaziz Almutlaq, Maryam Abdullah Albutish
-                    </td>
-                </tr>
-                <tr style="height: 21px;">
-                    <td style="height: 21px; width: 21.0182%;"><h4>&nbsp;Program</h4></td>
-                    <td style="height: 21px; width: 56.9818%;">&nbsp;&nbsp;EEL</td>
-                </tr>
-                <tr style="height: 21px;">
-                    <td style="height: 21px; width: 21.0182%;"><h4>&nbsp;Team Name</h4></td>
-                    <td style="height: 21px; width: 56.9818%;">&nbsp; &nbsp;ABC Software Solutions</td>
-                </tr>
-                <tr style="height: 21px;">
-                    <td style="height: 21px; width: 21.0182%;"><h4>&nbsp;Idea Description</h4></td>
-                    <td style="height: 21px; width: 56.9818%;">&nbsp; &nbsp;This is the idea description</td>
-                </tr>
-                <tr style="height: 21px;">
-                    <td style="height: 21px; width: 21.0182%;"><h4>&nbsp;Idea Category</h4></td>
-                    <td style="height: 21px; width: 56.9818%;" >&nbsp; <h4>&nbsp;<select class="form-control">
+            <td style="height: 21px; width: 56.9818%;text-align:center"> linkedin.com/andrewj</td>
+            <td style="height: 21px; width: 56.9818%;text-align:center"> siemens.com/andrewj</td>
+            <td style="height: 21px; width: 56.9818%;text-align:center"> ABC Software Solutions</td>
 
-                        <option>Physical Product</option>
-                        <option>Service-based</option>
-                        <option>Technology-based</option>
-                        <option>Website / Mobile App</option>
-                        <option>Artificial Intelligence (AI)-based</option>
-                        <option>Internet of Things (IoT)-based.</option>
-                    </select></td></h4>
-                </tr>
-
-                </tbody>
-            </table>
-
-            <hr>
+        </tr>
 
 
-            <p>&nbsp;</p>
-            <p>
-                <button class="btn btn-primary btn-lg" type="submit"><span aria-hidden="true"
-                                                                           class="glyphicon glyphicon-submit"></span>
-                    Save
-                </button>
-
-            </p>
-
-
-        </div>
-        <!-- /.column -->
-    </div>
-    <!-- /.row -->
-
-
-    <!-- /.row -->
-
+        </tbody>
+    </table>
     <!-- Footer -->
-<br>
-<br>
-<br>
-<br><br>
-<br><br>
-<br><br>
-<br><br>
-<br><br>
-<br><br>
-<br><br>
-<br><br>
-<br><br>
-<br>
+    </br>
+    </br>
+    </br>
+    </br></br>
+    </br></br>
+    </br></br>
+    </br></br>
+    </br></br>
+    </br></br>
+    </br></br>
+    </br></br>
+    </br></br>
+    </br>
 
     <div class="row navbar-fixed-bottom">
         <hr>
